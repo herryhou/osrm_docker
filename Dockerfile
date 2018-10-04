@@ -13,7 +13,7 @@ RUN git clone https://github.com/Project-OSRM/osrm-backend.git && \
     cd -
 
 RUN cd osrm-backend && \
-    npm install && \
+    npm install --ignore-scripts && \
     mkdir -p build && \
     cd build && \
     cmake .. -DCMAKE_BUILD_TYPE=Release -DENABLE_NODE_BINDINGS=On && \
