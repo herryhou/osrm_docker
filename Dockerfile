@@ -9,7 +9,7 @@ RUN NPROC=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) && \
 
 RUN git clone https://github.com/Project-OSRM/osrm-backend.git && \
     cd osrm-backend && \
-    git checkout v5.19.0 && \
+    git checkout v5.22.0 && \
     cd -
 
 RUN cd osrm-backend && \
